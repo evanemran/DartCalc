@@ -38,17 +38,18 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
         title: Text(widget.title),
       ),
-      body: Text("hello"),
+      body: Text("1234",),
       bottomNavigationBar: BottomAppBar(
         color: Colors.transparent,
         child: Wrap(children: [
           Column(children: [
+            Row(children: [Expanded(child: Padding(padding: EdgeInsets.all(10), child: Text("1234", style: TextStyle(color: Colors.white, fontSize: 52), textAlign: TextAlign.end,),))],),
             SizedBox(height: 20,),
             Row(children: [
               Expanded(child: RoundButton("AC", Colors.black, Colors.white70)),
-              Expanded(child: RoundButton("+/-", Colors.black, Colors.white70)),
+              Expanded(child: RoundButton("±", Colors.black, Colors.white70)),
               Expanded(child: RoundButton("%", Colors.black, Colors.white70)),
-              Expanded(child: RoundButton("/", Colors.white, Colors.amber)),
+              Expanded(child: RoundButton("÷", Colors.white, Colors.amber)),
             ],),
 
             SizedBox(height: 20,),
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(child: RoundButton("7", Colors.white, Colors.white24)),
               Expanded(child: RoundButton("8", Colors.white, Colors.white24)),
               Expanded(child: RoundButton("9", Colors.white, Colors.white24)),
-              Expanded(child: RoundButton("x", Colors.white, Colors.amber)),
+              Expanded(child: RoundButton("×", Colors.white, Colors.amber)),
             ],),
 
             SizedBox(height: 20,),
@@ -64,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(child: RoundButton("4", Colors.white, Colors.white24)),
               Expanded(child: RoundButton("5", Colors.white, Colors.white24)),
               Expanded(child: RoundButton("6", Colors.white, Colors.white24)),
-              Expanded(child: RoundButton("-", Colors.white, Colors.amber)),
+              Expanded(child: RoundButton("−", Colors.white, Colors.amber)),
             ],),
 
             SizedBox(height: 20,),
@@ -76,9 +77,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ],),
 
             SizedBox(height: 20,),Row(children: [
-              Expanded(child: ExpandedButton("0", Colors.white, Colors.white24)),
-              Expanded(child: RoundButton(".", Colors.white, Colors.amber)),
-              Expanded(child: RoundButton("=", Colors.white, Colors.amber)),
+              Padding(padding: EdgeInsets.fromLTRB(10, 0, 10, 0), child: Expanded(child: ExpandedButton("0", Colors.white, Colors.white24)),),
+              Padding(padding: EdgeInsets.fromLTRB(5, 0, 5, 0), child: RoundButton(".", Colors.white, Colors.amber),),
+              Padding(padding: EdgeInsets.fromLTRB(10, 0, 5, 0), child: RoundButton("=", Colors.white, Colors.amber),),
             ],),
 
             SizedBox(height: 20,),

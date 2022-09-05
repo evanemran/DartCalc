@@ -9,7 +9,7 @@ class RoundButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {},
-      child: Text(value, style: TextStyle(fontSize: 22, color: txtColor),),
+      child: Text(value, style: TextStyle(fontSize: 32, color: txtColor),),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(80,80),
         shape: CircleBorder(),
