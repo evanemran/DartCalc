@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(child: RoundButton(value: "4", txtColor: Colors.white, btnColor: Colors.white24, onTapped: () {onClicked("4");},)),
               Expanded(child: RoundButton(value: "5", txtColor: Colors.white, btnColor: Colors.white24, onTapped: () {onClicked("5");},)),
               Expanded(child: RoundButton(value: "6", txtColor: Colors.white, btnColor: Colors.white24, onTapped: () {onClicked("6");},)),
-              Expanded(child: RoundButton(value: "−", txtColor: Colors.white, btnColor: Colors.amber, onTapped: () {onClicked("−");},)),
+              Expanded(child: RoundButton(value: "-", txtColor: Colors.white, btnColor: Colors.amber, onTapped: () {onClicked("-");},)),
             ],),
 
             const SizedBox(height: 20,),
